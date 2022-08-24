@@ -6,7 +6,7 @@
 }
 
 body{
-  background: #080808;
+  background: black;
   color: #fff;
 }
 
@@ -181,6 +181,10 @@ nav ul li a:hover::after{
   margin-bottom: 30px;
 }
 
+.services-list div iconify-icon{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
 .services-list div h2{
   font-size: 30px;
   font-weight: 500;
