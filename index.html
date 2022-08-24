@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samartha Bhat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0d5c6d03b.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                 <img src="logo.png" class="logo"> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Certification</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Android and Web developer</p>
+                <h1>Hi, I'm <span>Samartha</span></h1>
+            </div>
+        </div>
+    </div>
+<!-- ---------------about----------------------- -->
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="sam-modified (1).png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title" >About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe quaerat, deserunt, voluptatem consequatur id ut dignissimos dolor ad earum totam dolorum reprehenderit facilis voluptate nisi harum itaque pariatur?</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>App Development</span><br>Building Android apps</li>
+                                <li><span>Web Development</span><br>Building Websites</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="hobbies">
+                            <ul>
+                                <li><span>Drawing</span><br>Drawing Potraits pencil sketch</li>
+                                <li><span>Photography</span><br>Landscape</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-Present</span><br>SDM Institute Of Technology,Ujire dist D.K</li>
+                                <li><span>2017-2019</span><br>Sri Aurobindo Pre-university,Shimoga</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certification</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-hackerrank"></i>
+                <h2>SQL(Basics)</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio, ut, in eligendi ratione quos perferendis fuga enim minima neque dolorum quasi voluptatibus, quod beatae magnam quaerat molestias suscipit nisi?</p>
+                <a href="https://www.hackerrank.com/certificates/801513e50d9a">Learn more</a>
+            </div>
+
+            <div>
+                <iconify-icon icon="simple-icons:datacamp"></iconify-icon>
+                <h2>Data Science</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio, ut, in eligendi ratione quos perferendis fuga enim minima neque dolorum quasi voluptatibus, quod beatae magnam quaerat molestias suscipit nisi?</p>
+                <a href="https://www.datacamp.com/statement-of-accomplishment/course/2ec3b116e8d82adb86e47e6673dda1714f8d6446?share=true">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-linkedin"></i>
+                <h2>LinkedIn workshop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio, ut, in eligendi ratione quos perferendis fuga enim minima neque dolorum quasi voluptatibus, quod beatae magnam quaerat molestias suscipit nisi?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------portfolio------- -->
+<div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="news.jpg">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>This application use to get news for the readers</p>
+                    <a href="https://github.com/Samarthasbhat/News_Fresh"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="q.jpg">
+                    <div class="layer">
+                        <h3>Quotes App</h3>
+                        <p>This application use to get news for the readers</p>
+                    <a href="https://github.com/Samarthasbhat/Thought"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="notes.jpg">
+                    <div class="layer">
+                        <h3>Notes App</h3>
+                        <p>This application use to get news for the readers</p>
+                    <a href="https://github.com/Samarthasbhat/touch_note"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/Samarthasbhat" class="btn">see more</a>
+        </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>
