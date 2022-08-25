@@ -14,13 +14,15 @@
         <div class="container">
             <nav>
                  <img src="logo.png" class="logo"> 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Certification</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li> 
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certification</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Android and Web developer</p>
@@ -38,7 +40,7 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title" >About Me</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus saepe quaerat, deserunt, voluptatem consequatur id ut dignissimos dolor ad earum totam dolorum reprehenderit facilis voluptate nisi harum itaque pariatur?</p>
+                        <p>Aspiring computer science engineering student. Learning new things from technologies . Passionate about doing projects</p>
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -56,8 +58,9 @@
                         </div>
                         <div class="tab-contents" id="hobbies">
                             <ul>
-                                <li><span>Drawing</span><br>Drawing Potraits pencil sketch</li>
+                                <li><span>Drawing</span><br>Potraits pencil sketch</li>
                                 <li><span>Photography</span><br>Landscape</li>
+                                <li><span>Books</span><br>reading books to gain experience from the book</li>
 
                             </ul>
                         </div>
@@ -82,21 +85,21 @@
             <div>
                 <i class="fa-brands fa-hackerrank"></i>
                 <h2>SQL(Basics)</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio, ut, in eligendi ratione quos perferendis fuga enim minima neque dolorum quasi voluptatibus, quod beatae magnam quaerat molestias suscipit nisi?</p>
+                <p>From hacker rank test on SQL basic based on the basics the question are asked </p>
                 <a href="https://www.hackerrank.com/certificates/801513e50d9a">Learn more</a>
             </div>
 
             <div>
                 <iconify-icon icon="simple-icons:datacamp"></iconify-icon>
                 <h2>Data Science</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio, ut, in eligendi ratione quos perferendis fuga enim minima neque dolorum quasi voluptatibus, quod beatae magnam quaerat molestias suscipit nisi?</p>
+                <p>Data Science course from datacamp.It is mainly based on the introduction to data science it is helpfull for beginners. </p>
                 <a href="https://www.datacamp.com/statement-of-accomplishment/course/2ec3b116e8d82adb86e47e6673dda1714f8d6446?share=true">Learn more</a>
             </div>
 
             <div>
                 <i class="fa-brands fa-linkedin"></i>
                 <h2>LinkedIn workshop</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio, ut, in eligendi ratione quos perferendis fuga enim minima neque dolorum quasi voluptatibus, quod beatae magnam quaerat molestias suscipit nisi?</p>
+                <p>Workshop on LinkedIn organised by NMIMS MPSTEM's student colloquium,Mumbai speaker Aman Dhattarwal</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
@@ -120,7 +123,7 @@
                     <img src="q.jpg">
                     <div class="layer">
                         <h3>Quotes App</h3>
-                        <p>This application use to get news for the readers</p>
+                        <p>Quotes application for android</p>
                     <a href="https://github.com/Samarthasbhat/Thought"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -128,7 +131,7 @@
                     <img src="notes.jpg">
                     <div class="layer">
                         <h3>Notes App</h3>
-                        <p>This application use to get news for the readers</p>
+                        <p>Features are search,note,pin,delete</p>
                     <a href="https://github.com/Samarthasbhat/touch_note"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -136,6 +139,38 @@
 
             <a href="https://github.com/Samarthasbhat" class="btn">see more</a>
         </div>
+</div>
+
+<!-- -------------------contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> samarthabhat11@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_samarthasbhat_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/Samarthbhat_"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/samarthabhat/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Samarthasbhat"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+<div class="copyright">
+    <p>Copyright © Samartha Bhat - 2022</p>
+</div>
 </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -151,6 +186,37 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
     </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGGd6Xa3CRrJar-BWUS4OTcjyOpK6M6_V2bqptnH5PS994sC7DYC-XuA_gU4uGsh6CEA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg  = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>
