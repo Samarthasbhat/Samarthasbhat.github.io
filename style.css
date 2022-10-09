@@ -14,11 +14,12 @@ body{
   color: #fff;
 }
 
+
+
 #header{
   width: 100%;
-  height: 100vh;
-
-  background-size:cover ;
+  /* height: 100vh; */
+  background-size:cover;
   background-position: center;
 }
 
@@ -34,7 +35,7 @@ nav{
 }
 
 .logo{
-  width: 140px;
+  width: 120px;
 }
 
 nav ul li{
@@ -66,8 +67,22 @@ nav ul li a:hover::after{
   
 }
 
+.header-vedio{
+  margin-top: 5%;
+  margin-left: 20%;
+  font-size: 30px;
+}
+
+.combine{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .header-text{
-  margin-top: 20%;
+  margin-top: 1%;
+  /* margin-left: 60%; */
   font-size: 30px;
 }
 
