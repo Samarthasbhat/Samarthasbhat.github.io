@@ -212,18 +212,142 @@ nav ul li a:hover::after{
 
 .services-list div a{
   text-decoration: none;
-  color: #fff;
+  color: rgb(25, 213, 242);
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
 }
 
 .services-list div:hover{
-  background:  rgb(29, 61, 155);
+  background:   rgba(5, 3, 59, 0.574);
   transform: translateY(-10px);
 }
 
+.services-list div a:hover{
+  color:rgb(239, 224, 14);
+}
 
+/* achievement */
+#achievements{
+  padding: 30px 0;
+}
+.achieve-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.achieve-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.achieve-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+
+.achieve-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+.achieve-list div a{
+  text-decoration: none;
+  color: rgb(25, 213, 242);
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.box:hover{
+  box-shadow: 0 0 11px rgb(255, 221, 0); 
+}
+
+.box-red:hover{
+  box-shadow: 0 0 11px rgb(206, 196, 10); 
+}
+.achieve-list div:hover{
+  background:  rgba(5, 3, 59, 0.574);
+  transform: translateY(-10px);
+}
+
+.fa-digital-ocean{
+  color: #008bcf;
+}
+
+.fa-docker{
+  color: #0db7ed;
+}
+
+
+.fa-github{
+  color:#fff;
+}
+
+.achieve-list div a:hover{
+  color:rgb(239, 224, 14);
+}
+
+.fa-css3-alt{
+  color: #2965f1;
+  margin: 10px;
+}
+
+.fa-html5{
+  color: 	#e34c26;
+}
+.fa-java{
+  color:#fb7e0a;
+  margin: 10px;
+ 
+}
+
+.fa-js{
+  color: rgb(234, 255, 0);
+  margin: 10px;
+}
+
+
+
+.fa-android{
+  margin: 10px;
+  color: rgb(17, 251, 9);
+ 
+}
+
+
+
+
+.achieve-list div p{
+  font-size: 13px;
+}
+
+.fa-digital-ocean  {
+  /* padding-left: 800px; */
+  margin: 10px;
+}
+
+.fa-docker{
+  
+  /* padding-left: 800px; */
+  margin: 10px;
+}
+
+.fa-github{
+  margin: 10px;
+  /* padding-right: 100px; */
+  
+  
+}
 /* -----------portflio-------- */
 
 #portfolio{
