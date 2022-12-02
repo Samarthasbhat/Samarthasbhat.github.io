@@ -315,8 +315,8 @@ nav ul li a:hover::after{
   box-shadow: 0 0 11px rgb(245, 245, 245); 
 }
 .achieve-list div:hover{
-  color:  #FDFFFF;
-   background: #121619;
+  color:  #000000;
+   background: #FFFFFF;
    transform: translateY(-20px); 
    transition-duration: background 0.5s, transform 0.5ms;
 }
