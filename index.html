@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e0d5c6d03b.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+        </style>
 </head>
 <body>
 
     <div id="header">
-        
+
         <div class="container">
             <nav>
                  <img src="logo.png" class="logo"> 
@@ -21,6 +24,7 @@
                     <li><a href="#header">Home</a></li> 
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Certification</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 
@@ -62,34 +66,35 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title" >About Me</h1>
-                        <p>Aspiring computer science engineering student. Learning new things from technologies . Passionate about doing projects</p>
+                        <br>
+                        <h2>Aspiring computer science engineering student. Learning new things from technologies . Passionate about doing projects</h2>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <h3 class="tab-links active-link" onclick="opentab('skills')">Skills</h3>
+                            <h3 class="tab-links" onclick="opentab('hobbies')">Hobbies</h3>
+                            <h3 class="tab-links" onclick="opentab('education')">Education</h3>
 
 
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>App Development</span><br>Building Android apps</li>
-                                <li><span>Web Development</span><br>Building Websites</li>
+                                <li><span><h3>Android Development</h3></span><br><h3>Building Android apps</h3></li>
+                                <li><span><h3>Web Development</h3></span><br><h3>Building Websites</h3></li>
 
                             </ul>
                         </div>
                         <div class="tab-contents" id="hobbies">
                             <ul>
-                                <li><span>Drawing</span><br>Potraits pencil sketch</li>
-                                <li><span>Photography</span><br>Landscape</li>
-                                <li><span>Books</span><br>reading books to gain experience from the book</li>
+                                <li><span><h3>Drawing</h3></span><br><h3>Potraits pencil sketch</h3></li>
+                                <li><span><h3>Photography</h3></span><br><h3>Landscape</h3></li>
+                                <li><span><h3>Books</h3></span><br><h3>Reading books to gain experience from the book</h3></li>
 
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2019-Present</span><br>SDM Institute Of Technology,Ujire dist D.K</li>
-                                <li><span>2017-2019</span><br>Sri Aurobindo Pre-university,Shimoga</li>
+                                <li><span><h3>2019-Present</h3></span><br><h3>SDM Institute Of Technology,Ujire dist D.K</h3></li>
+                                <li><span><h3>2017-2019</h3></span><br><h3>Sri Aurobindo Pre-university,Shimoga</h3></li>
 
                             </ul>
                         </div>
@@ -103,26 +108,66 @@
 <div id="services">
     <div class="container">
         <h1 class="sub-title">Certification</h1>
-        <div class="services-list">
-            <div>
+        <div class="services-list ">
+            <div class="box-red">
                 <i class="fa-brands fa-hackerrank"></i>
                 <h2>SQL(Basics)</h2>
                 <p>From hacker rank test on SQL basic based on the basics the question are asked </p>
                 <a href="https://www.hackerrank.com/certificates/801513e50d9a">Learn more</a>
             </div>
 
-            <div>
+            <div class="box-red">
                 <iconify-icon icon="simple-icons:datacamp"></iconify-icon>
                 <h2>Data Science</h2>
                 <p>Data Science course from datacamp.It is mainly based on the introduction to data science it is helpfull for beginners. </p>
                 <a href="https://www.datacamp.com/statement-of-accomplishment/course/2ec3b116e8d82adb86e47e6673dda1714f8d6446?share=true">Learn more</a>
             </div>
 
-            <div>
+            <div class="box-red">
                 <i class="fa-brands fa-linkedin"></i>
                 <h2>LinkedIn workshop</h2>
                 <p>Workshop on LinkedIn organised by NMIMS MPSTEM's student colloquium,Mumbai speaker Aman Dhattarwal</p>
                 <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- achievements -->
+
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        
+        <div class="achieve-list box">
+            
+            <div>
+                <h2>Hacktober Fest Open Source Contribution</h2>
+               <i class="fa-brands fa-digital-ocean"></i>
+                <i class="fa-brands fa-docker"></i>
+                <i class="fa-brands fa-github"></i>
+                
+                
+            
+                <p>- Event organised by the <span>Github , Docker , Digital Ocean</span> and <span>Appwrite</span> in the month of October every year.
+                </p>
+<br>
+                <p>
+                    - The minimum <span class="pull">4 PR (Pull Request) / MR (Merge Request)</span> . The  contributer badge is given from holopin.
+                </p>
+    <br>
+                <p>- I have used <span class="languages">languages</span> and <span class="tools">tools</span> in contribution are
+                    <br>
+                    <br>
+    <i class="fa-brands fa-java"></i>
+    <i class="fa-brands fa-js"></i>
+    <i class="fa-brands fa-android"></i>
+    <i class="fa-brands fa-html5"></i>
+    <i class="fa-brands fa-css3-alt"></i>
+    
+    <h3>My Holopin Profile <a href="https://www.holopin.io/@samarthasbhat">Samartha</a></h3>
+</p>
+                
             </div>
         </div>
     </div>
@@ -170,7 +215,7 @@
 
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> samarthabhat11@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i>samarthabhat11@gmail.com</p>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/_samarthasbhat_/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://twitter.com/Samarthbhat_"><i class="fa-brands fa-twitter-square"></i></a>
