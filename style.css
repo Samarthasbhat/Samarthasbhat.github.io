@@ -751,3 +751,20 @@ nav .fa-solid{
 
 	}
 }
+/* scroll up btn */
+.top {
+  position: fixed;
+  font-size: large;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 12px;
+  color: rgb(0, 0, 0);
+  background: #D0F4EA;
+  border-radius: 5px;
+}  
+  .top:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+  }
+
