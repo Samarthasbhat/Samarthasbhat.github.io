@@ -262,6 +262,18 @@ nav ul li a:hover::after{
   margin-top: 50px;
 }
 
+.ac{
+  text-align: center;
+}
+
+.fa-award {
+  color: #B26700;
+}
+
+.fa-trophy{
+  color:#B26700;
+}
+
 .achieve-list div{
   /* background: #262626; */
   /* background-image: url(holopin-git.png); */
@@ -278,6 +290,11 @@ nav ul li a:hover::after{
 	animation-timing-function: linear; 
 	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
 }
+
+.open{
+  text-align: center;
+}
+
 
 .achieve-list div i{
   font-size: 50px;
@@ -623,10 +640,12 @@ nav .fa-solid{
 
   .header-vedio{
     
-    
+
     display: none;
 
   }
+
+  
 
   .combine{
     display:flex;
@@ -751,7 +770,7 @@ nav .fa-solid{
 
 	}
 }
-/* scroll up btn */
+
 .top {
   position: fixed;
   font-size: large;
@@ -767,4 +786,3 @@ nav .fa-solid{
     background: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
   }
-
