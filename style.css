@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+
+
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -19,17 +23,18 @@ body{
 #header{
   width: 100%;
   /* height: 100vh; */
+  background: var(--primary-color);
   background-size:cover;
   background-position: center;
 }
 
 #and{
-color: #92BCEA;
+color: #e0ea92;
 
 }
 
 #webhead{
-color: #92BCEA;
+color: #abea92;
 }
 
 .container{
@@ -144,6 +149,9 @@ nav ul li a:hover::after{
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
+  color:rgb(204, 213, 156);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
 .tab-links{
@@ -154,7 +162,7 @@ nav ul li a:hover::after{
   position: relative;
 }
 .det{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: x-large;
   font-weight: 200;
   color: #E6E8E6;
@@ -181,7 +189,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-  color: rgb(94, 119, 158);
+  color: rgb(22, 189, 89);
   font-size: 14px;
 }
 
@@ -451,7 +459,7 @@ nav ul li a:hover::after{
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6),#2327a8) ;
+  background: linear-gradient(rgba(0,0,0,0.6),#ECF39E) ;
   border-radius: 10px;
   position: absolute;
   left: 0;
