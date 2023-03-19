@@ -10,8 +10,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/e0d5c6d03b.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+
+    
+
+          .checked {
+            color: rgb(213, 160, 61);
+          }
+
+          #services:hover {
+            color:white;
+          }
         </style>
 </head>
 <body>
@@ -36,7 +47,7 @@
                 </ul>
                 
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-               
+            
             </nav>
             <div class="combine">
             <div class="header-text"><h1>Hi, I'm <span>Samartha</span></h1>
@@ -70,7 +81,15 @@
                     <div class="about-col-2">
                         <h1 class="sub-title" >About Me</h1>
                         <br>
-                        <h2 class="det">Pursuing Computer Science Engineering . Best way to showcase skills is by doing projects . Interested to participate in any Open Source Event .</h2>
+                        <h2 class="det">
+                            Welcome to my website! I'm an Android and  Web Developer engineering student with a passion for creating software that solves real-world problems. I believe that technology can be a powerful force for good, and I'm dedicated to using my skills and knowledge to make a positive impact on people's lives.
+                            <br>
+                            <br>
+                            I enjoy staying up-to-date with the latest trends and advancements in software development. I also enjoy collaborating with others and learning from their perspectives and experiences.
+
+                        </h2>
+
+                        <br>
                         <div class="tab-titles">
                             <h3 class="tab-links active-link" onclick="opentab('skills')">Skills</h3>
                             <h3 class="tab-links" onclick="opentab('hobbies')">Hobbies</h3>
@@ -113,8 +132,13 @@
         <div class="services-list ">
             <div class="box-red">
                 <i class="fa-brands fa-hackerrank"></i>
-                <h2>SQL(Basics)</h2>
-                <p>From hacker rank test on SQL basic based on the basics the question are asked </p>
+                <h2>SQL
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    </h2>
+                <p> Earned Hackerrank Silver card in SQL </p>
                 <a href="https://www.hackerrank.com/certificates/801513e50d9a">Learn more</a>
             </div>
 
@@ -193,7 +217,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="quotes.jpg">
+                    <img src="s2.png">
                     <div class="layer">
                         <h3>Quotes App</h3>
                         <p>Quotes application for android</p>
@@ -201,7 +225,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="notes.jpg">
+                    <img src="note.png">
                     <div class="layer">
                         <h3>Notes App</h3>
                         <p>Features are search,note,pin,delete</p>
@@ -254,7 +278,7 @@
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fa-solid fa-envelope"></i>samarthabhat11@gmail.com</p>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/samarthabhat/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/_samarthasbhat_/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://twitter.com/Samarthbhat_"><i class="fa-brands fa-twitter-square"></i></a>
                     <a href="https://www.linkedin.com/in/samarthabhat/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Samarthasbhat"><i class="fa-brands fa-github"></i></a>
@@ -266,6 +290,8 @@
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
+
+                    
                 </form>
                 <span id="msg"></span>
             </div>
@@ -314,7 +340,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message sent successfully"
+                msg.innerHTML = "Message sent successfully . Thank you for visiting my website, and I look forward to connecting with you!"
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)
@@ -328,3 +354,5 @@
 </body>
 
 </html>
+
+
