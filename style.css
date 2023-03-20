@@ -106,7 +106,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-  color: rgb(29, 61, 155);
+  color: rgb(39, 32, 233);
 }
 
 /* -----------------about---------- */
@@ -371,7 +371,19 @@ nav ul li a:hover::after{
 }
 
 
+.fa-instagram{
+  color:#fff;
+}
+
+.fa-twitter-square{
+  color:#fff;
+}
+
 .fa-github{
+  color:#fff;
+}
+
+.fa-linkedin{
   color:#fff;
 }
 
@@ -424,12 +436,12 @@ nav ul li a:hover::after{
   margin: 10px;
 }
 
-.fa-github{
+/* .fa-github{
   margin: 10px;
   /* padding-right: 100px; */
   
   
-}
+/* } */ */
 /* -----------portflio-------- */
 
 #portfolio{
@@ -634,7 +646,7 @@ form btn2{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #262626;
+  background: #474343;
   font-weight: 300;
   margin-top: 20px;
 }
