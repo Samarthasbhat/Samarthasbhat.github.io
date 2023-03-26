@@ -658,11 +658,18 @@ nav .fa-solid{
 } 
 @media only screen and (max-width:600px)  {
 
+  
+  .container{
+    padding: 0px 10%;
+  }
+
+  .logo-id{
+    display: flex;
+    margin-top: 7px;
+    margin-left: -40px;
+  }
   .header-vedio{
-    
-
     display: none;
-
   }
 
   
