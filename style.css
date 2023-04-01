@@ -216,7 +216,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-  background: #262626;
+  background: #0a102a;
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -353,6 +353,7 @@ nav ul li a:hover::after{
 
 .box-red:hover{
   box-shadow: 0 0 11px rgb(245, 245, 245); 
+  
 }
 .achieve-list div:hover{
   color:  #000000;
@@ -646,7 +647,7 @@ form btn2{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #474343;
+  background: #081528;
   font-weight: 300;
   margin-top: 20px;
 }
