@@ -24,7 +24,52 @@
           #services:hover {
             color:white;
           }
-
+          
+            
+            
+            .flip-box {
+              background-color: transparent;
+              width: 300px;
+              height: 200px;
+              border: 1px solid #000000;
+              perspective: 1000px;
+              
+            }
+            
+            .flip-box-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+            }
+            
+            .flip-box:hover .flip-box-inner {
+              transform: rotateY(500deg);
+              
+            }
+            
+            .flip-box-front, .flip-box-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+            }
+            
+            .flip-box-front {
+              background-color: #000000;
+              color: black;
+              
+            }
+            
+            .flip-box-back {
+              background-color: rgb(0, 0, 0);
+              color: white;
+              transform: rotateY(180deg);
+            }
+            
          
         </style>
 </head>
@@ -300,7 +345,22 @@
                     <a href="https://leetcode.com/samarthabhat11/"><img src = "leetcode.png" width="28px" height="28px"></a>
                     <a href="https://www.hackerrank.com/samarthabhat11"><img src = "hacker-rank.png" width="28px" height="28px"></a>
                     <a href="https://www.goodreads.com/user/show/160384823-samartha-bhat"><img src = "goodreads.png" width="28px" height="28px"></a>
-
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front">
+                            
+                            <img src="logo1.png" width="200px" style="border-radius:50px" alt="">
+                            
+                          </div>
+                          <div class="flip-box-back" width="200px" style="border-radius:50px">
+                        
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
             <div class="contact-right">
@@ -318,6 +378,14 @@
         </div>
     </div>
 
+
+<!-- images -->
+<!-- <h1>3D Flip Box (Horizontal)</h1>
+<h3>Hover over the box below:</h3> -->
+
+
+
+    
 <div class="copyright">
     <p>Copyright © Samartha Bhat - <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
 </div>
