@@ -673,7 +673,9 @@ nav .fa-solid{
     display: none;
   }
 
-  
+  .flip-box {
+	display:none;
+   }
 
   .combine{
     display:flex;
