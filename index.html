@@ -303,10 +303,8 @@
                     </div>
                 </div>
             </div>
-
-<br>
-<br>
-<br>
+            <br>
+            <br>
             <h2 class = "web">Web Development</h2>
             <div class="work-list">
                 <div class="work">
@@ -334,12 +332,29 @@
                     </div>
                 </div>
             </div>
-
-            <a href="https://github.com/Samarthasbhat" class="btn">see more</a>
+            <button class="btn btn2" onclick="openPopup()">See More</button>
+    
         </div>
 </div>
+<!-- project popup -->
+<div class="projectspopup" >
+    <div class="subproject" id="subproj">
+        <h1 class="sub-title">Projects</h1>
+        <br>
+      <div class="all" >
+        <div class="pro col-2 " style="background-image: url(gallery.png);" id="textpro">Gallery</div>
+        <div class="pro col-2" style="background-image: url(mp3player.png);" >Music player</div>
+        <div class="pro" style="background-image: url(youtube.png);">Youtube</div>
+        <div class="pro"></div>
+        <div class="pro"></div>
+        <div class="pro"></div>
 
+    </div>
+    <button class="btn btn2"  onclick="closePopup()">Close</button>
 
+    </div>
+    
+ </div>
 
 
 <!-- -------------------contact----- -->
@@ -404,6 +419,9 @@
 </div>
 <a style="background: rgb(232, 234, 234);" href="#top" class="top" aria-label="Back to top" title="Back to top"><img src="scroll-up.png" width="20" height="20"></a>
 </div>
+
+
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -450,7 +468,20 @@
         })
       </script>
 
-      <script src="script.js"></script>
+      
+
+
+      <script>
+        let pop = document.querySelector('.projectspopup');
+
+        function openPopup(){
+            pop.classList.add('projectvis');
+        }
+
+        function closePopup(){
+            pop.classList.remove('projectvis');
+        }
+      </script>
 </body>
 
 </html>
