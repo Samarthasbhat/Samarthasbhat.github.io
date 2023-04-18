@@ -223,7 +223,9 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-  background: #0a102a;
+  /* background: #0a102a; */
+  background: linear-gradient(to left,#000000,#202037);
+  /* background: linear-gradient(to bottom,#373B44,#4286f4); */
   padding: 40px;
   font-size: 13px;
   font-weight: 300;
@@ -256,7 +258,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-  background:   #00000029;
+  background:   linear-gradient(to bottom,#202037,#000000);
   transform: translateY(-10px);
 }
 
@@ -844,7 +846,7 @@ nav .fa-solid{
   visibility: hidden;
   width:100vw;
   height:100vh;
-  background:rgb(41, 29, 29);
+  background:linear-gradient(to top,#0F2027,#203A43,#2C5364);
   z-index:10;
   position: fixed;
   left:0;
@@ -860,7 +862,7 @@ nav .fa-solid{
   border-radius: 10px;
   padding: 25px;
   width:70%;
-  background: #4a666c;
+  background: linear-gradient(to bottom,#E4E5E6,#00416A);
   height: 75%;
   text-align: center;
   justify-content: center;
@@ -887,8 +889,8 @@ nav .fa-solid{
 
 .pro:hover{
   font-family: 'Alkatra', serif;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
 }
 
 .all{
@@ -907,6 +909,9 @@ nav .fa-solid{
   grid-column: span 1;
 }
 
+.fa-up-right-from-square{
+  
+}
 
 
 @keyframes backgroundColorPalette {
