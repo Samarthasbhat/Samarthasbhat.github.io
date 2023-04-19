@@ -673,7 +673,22 @@ nav .fa-solid{
   
   .container{
     padding: 0px 10%;
-    
+  }
+
+  .services-list div{
+    /* background: #0a102a; */
+    background: linear-gradient(to top,#000000,#202037);
+    /* background: linear-gradient(to bottom,#373B44,#4286f4); */
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+  }
+
+  .services-list div:hover{
+    background:   linear-gradient(to top,#202037,#000000);
+    transform: translateY(-10px);
   }
 
   .flip-box{
@@ -757,6 +772,14 @@ nav .fa-solid{
   .copyright{
     font-size: 14px;
   }
+
+
+
+.all{
+  display: none;
+  visibility: hidden;
+}
+
 }
 
 #msg{
@@ -909,8 +932,8 @@ nav .fa-solid{
   grid-column: span 1;
 }
 
-.fa-up-right-from-square{
-  
+.pali{
+  color: rgb(2, 6, 10);
 }
 
 
