@@ -342,12 +342,12 @@
         <h1 class="sub-title">Some More</h1>
         <br>
       <div class="all" >
-        <div class="pro col-2" href style="background-image: url(gallery.png);" id="textpro">Gallery</div>
-        <div class="pro col-2" style="background-image: url(mp3player.png);" >Music player</div>
-        <div class="pro" style="background-image: url(youtube.png);">Youtube</div>
-        <div class="pro" style="background-image: url(color.png);">COLOR GUESS</div>
-        <div class="pro" style="background-image: url(moon.png);">Moon</div>
-        <div class="pro" style="background-image: url(palindrome.png);">Palindrome Checker</div>
+        <div class="pro col-2 gal" href style="background-image: url(gallery.png);" id="textpro">Gallery</div>
+        <div class="pro col-2 mus" style="background-image: url(mp3player.png);" >Music Player</div>
+        <div class="pro mus" style="background-image: url(youtube.png);">Youtube</div>
+        <div class="pro col" style="background-image: url(color.png);">Guess Color</div>
+        <div class="pro moon" style="background-image: url(moon.png);">Moon</div>
+        <div class="pro pali" style="background-image: url(palindrome.png);">Palindrome Checker</div>
 
     </div>
     <button class="btn btn2 "  onclick="closePopup()">Close</button>
@@ -395,7 +395,7 @@
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <textarea name="Message"  rows="6" cols="50" maxlength="100" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
 
                     
