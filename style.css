@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Montserrat:wght@500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bodoni+Moda:wght@400;900&family=Montserrat:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&display=swap');
 
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins',sans-serif;
+  /* font-family: 'Poppins',sans-serif; */
   box-sizing: border-box;
+font-family: 'Berkshire Swash', cursive;
+  
 }
 
 
@@ -110,10 +116,18 @@ nav ul li a:hover::after{
 .header-text h1{
   font-size: 60px;
   margin-top: 20px;
+font-family: 'Berkshire Swash', cursive;
+
 }
 
 .header-text h1 span{
-  color: rgb(39, 32, 233);
+  /* color: rgb(39, 32, 233); */
+  color: #9cd4db;
+  font-size: 60px;
+  margin-top: 20px;
+  font-family: 'Berkshire Swash', cursive;
+font-family: 'Lobster Two', cursive;
+
 }
 
 /* -----------------about---------- */
@@ -134,7 +148,7 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
   width: 100%;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .about-col-2{
@@ -270,6 +284,7 @@ nav ul li a:hover::after{
 #achievements{
   
   padding: 30px 0;
+  background: linear-gradient(to right,#000000,#202037);
 }
 .achieve-list{
   
@@ -299,12 +314,8 @@ nav ul li a:hover::after{
   font-weight: 300;
   border-radius: 10px;
   transition: 0.5ms, transform 0.5s;
-
-  animation-name: backgroundColorPalette;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-timing-function: linear; 
+  background: linear-gradient(to bottom,#202037,#000000);
+  color: #fff;
 	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
 }
 
@@ -342,7 +353,7 @@ nav ul li a:hover::after{
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif; 
 }
 
 .languages{
@@ -357,17 +368,18 @@ nav ul li a:hover::after{
 }
 
 .box:hover{
-  box-shadow: 0 0 11px rgb(255, 255, 255); 
+  background: linear-gradient(to right,#000000,#202037);
+
 }
 
 .box-red:hover{
-  box-shadow: 0 0 11px rgb(245, 245, 245); 
+  box-shadow: 0 0 11px rgb(0, 0, 0); 
   
 }
 .achieve-list div:hover{
-  color:  #000000;
-   background: #FFFFFF;
-   transform: translateY(-20px); 
+  color:  #fff;
+  background: linear-gradient(to left,#000000,#202037);
+   transform: translateY(-10px); 
    transition-duration: background 0.5s, transform 0.5ms;
 }
 
@@ -673,6 +685,12 @@ nav .fa-solid{
   
   .container{
     padding: 0px 10%;
+  }
+
+  .combine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .services-list div{
