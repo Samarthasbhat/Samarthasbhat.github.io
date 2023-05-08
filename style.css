@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Montserrat:wght@500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bodoni+Moda:wght@400;900&family=Montserrat:wght@500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Amita&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&family=Rampart+One&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   /* font-family: 'Poppins',sans-serif; */
   box-sizing: border-box;
-font-family: 'Berkshire Swash', cursive;
-  
 }
 
 
+#sidemenu{
+font-family: 'Berkshire Swash', cursive;
 
+}
 
 
 html{
@@ -118,16 +114,16 @@ nav ul li a:hover::after{
   margin-top: 20px;
 font-family: 'Berkshire Swash', cursive;
 
+
 }
 
 .header-text h1 span{
   /* color: rgb(39, 32, 233); */
-  color: #9cd4db;
-  font-size: 60px;
+  color: #3e7790;
+  font-size: 70px;
   margin-top: 20px;
-  font-family: 'Berkshire Swash', cursive;
-font-family: 'Lobster Two', cursive;
-
+/* font-family: 'Lobster Two', cursive; */
+font-family: 'Amita', cursive;
 }
 
 /* -----------------about---------- */
@@ -159,6 +155,7 @@ font-family: 'Lobster Two', cursive;
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+  font-family: 'Berkshire Swash', cursive;
 
   animation-name: backgroundFont;
 	animation-duration: 5s;
@@ -170,8 +167,10 @@ font-family: 'Lobster Two', cursive;
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
-  color:rgb(204, 213, 156);
-  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(19, 208, 186);
+  /* font-family: Arial, Helvetica, sans-serif; */
+font-family: 'Berkshire Swash', cursive;
+
   font-weight: bolder;
 }
 
@@ -590,12 +589,16 @@ font-family: 'Lobster Two', cursive;
   color: #ECF39E;
   font-size: x-large;
   text-align: center;
+font-family: 'Berkshire Swash', cursive;
+
 }
 
 .web{
   color:  #5FDD9D;
   font-size:x-large;
   text-align: center;
+font-family: 'Berkshire Swash', cursive;
+
 }
 
 /* ------contact------ */
@@ -686,7 +689,9 @@ nav .fa-solid{
   .container{
     padding: 0px 10%;
   }
-
+.header-text h1 span{
+  font-size: 60px;
+}
   .combine{
     display: flex;
     align-items: center;
