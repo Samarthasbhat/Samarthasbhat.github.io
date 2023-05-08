@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Amita&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&family=Rampart+One&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Amita:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Bruno+Ace+SC&family=Kalam:wght@300;400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&family=Rampart+One&family=Rubik+Vinyl&family=Satisfy&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -35,11 +35,12 @@ body{
 
 #and{
 color: #e0ea92;
-
+font-family: 'Bruno Ace SC', cursive;
 }
 
 #webhead{
 color: #abea92;
+font-family: 'Bruno Ace SC', cursive;
 }
 
 .container{
@@ -113,8 +114,35 @@ nav ul li a:hover::after{
   font-size: 60px;
   margin-top: 20px;
 font-family: 'Berkshire Swash', cursive;
+}
+
+/* Name animation */
 
 
+
+/* End of animation */
+
+
+
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
 
 .header-text h1 span{
@@ -167,7 +195,7 @@ font-family: 'Amita', cursive;
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;
-  color:rgb(19, 208, 186);
+  color:rgb(209, 209, 153);
   /* font-family: Arial, Helvetica, sans-serif; */
 font-family: 'Berkshire Swash', cursive;
 
@@ -204,6 +232,7 @@ font-family: 'Berkshire Swash', cursive;
 }
 
 .tab-contents ul li{
+  font-family: 'Kalam', cursive;
   list-style: none;
   margin: 10px 0; 
 }
@@ -277,6 +306,11 @@ font-family: 'Berkshire Swash', cursive;
 
 .services-list div a:hover{
   color:rgb(239, 224, 14);
+}
+
+.services-list p{
+  font-size: 15px;
+  font-family: 'Kalam', cursive;
 }
 
 /* achievement */
