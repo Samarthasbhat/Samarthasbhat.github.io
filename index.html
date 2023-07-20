@@ -13,65 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="logoicon1.png" type="image/icon">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
-
-    
-
-          .checked {
-            color: rgb(213, 160, 61);
-          }
-
-          #services:hover {
-            color:white;
-          }
-          
-            
-            .header-vedio ,.flip-box, .logo-id{
-                mix-blend-mode: exclusion;
-            }
-            
-            .flip-box {
-              background-color: transparent;
-              width: 300px;
-              height: 200px;
-              border: 1px solid #000000;
-              perspective: 1000px;
-              transition: ease-in-out .4s;
-            }
-            
-            .flip-box-inner {
-              position: relative;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              transition: transform 0.8s;
-              transform-style: preserve-3d;
-            }
-            
-            .flip-box:hover .flip-box-inner {
-              transform: rotateY(360deg);
-              transition: ease-in-out 2s;
-            }
-            
-            .flip-box-front, .flip-box-back {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              -webkit-backface-visibility: hidden;
-              backface-visibility: hidden;
-            }
-            
-            .flip-box-front {
-              background-color: #000000;
-              color: black;
-              
-            }
-            
-            .flip-box-back {
-              background-color: rgb(0, 0, 0);
-              color: white;
-              transform: rotateY(180deg);
-            }
+       
             
          
         </style>
@@ -118,13 +60,13 @@
             
        
         <div class="header-vedio">
-               
-            <video autoplay loop muted height="60%" width="90%">
-                <source src="animation.mp4" type="video/mp4">
-              </video>
+            
+            <div class="about-col-1">
+                <img src="samartha.png">
+            </div>
+            
 
-             
-              
+            
             </div>
         </div>
         </div>
@@ -136,9 +78,7 @@
         <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="about-col-1">
-                        <img src="samartha.png">
-                    </div>
+                  
                     <div class="about-col-2">
                         <h1 class="sub-title" >About Me</h1>
                         <br>
@@ -182,10 +122,19 @@
                         </div>
                     </div>
 
+                <div class="vl">
+                    <div class="social-icons">
+
+                        <a href="https://www.instagram.com/samarthabhat/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Samarthbhat_"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/samarthabhat/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Samarthasbhat"><i class="fa-brands fa-github"></i></a>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <!-- --------------services---------- -->
 <div id="services">
     <div class="container ac">
@@ -220,6 +169,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 
@@ -365,16 +315,10 @@
 
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>samarthabhat11@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/_samarthasbhat_/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/Samarthbhat_"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://www.linkedin.com/in/samarthabhat/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Samarthasbhat"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://leetcode.com/samarthabhat11/"><img src = "leetcode.png" width="28px" height="28px"></a>
-                    <a href="https://www.hackerrank.com/samarthabhat11"><img src = "hacker-rank.png" width="28px" height="28px"></a>
-                    <a href="https://www.goodreads.com/user/show/160384823-samartha-bhat"><img src = "goodreads.png" width="28px" height="28px"></a>
-                    <br>
+                
+                
+        
+                    
                     <br>
                     <br>
                     <br>
@@ -390,7 +334,6 @@
                           </div>
                         </div>
                       </div>
-                </div>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
