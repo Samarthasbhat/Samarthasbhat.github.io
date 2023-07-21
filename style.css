@@ -2,6 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Amita:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Bruno+Ace+SC&family=Kalam:wght@300;400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&family=Rampart+One&family=Rubik+Vinyl&family=Satisfy&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&family=Lumanosimo&display=swap');
 
   .social-icons {
       width: 100px;
@@ -15,11 +16,17 @@
       text-decoration: none;
       color: #000000;
     }
+
+    .social-icons i:hover{
+      color: rgb(0, 0, 0);
+    }
     
     .vl {
       margin-top: 200px;
       border-radius: 50%;
-      background-color: rgb(255, 255, 255);
+      border-style: inset;
+      border-color: rgb(255, 200, 0) transparent;
+      background-color: rgba(21, 223, 142, 0.499);
       height: 300px;
       width: 300px;
     }
@@ -28,10 +35,13 @@
 
     .vl:hover {
       margin-top: 200px;
-      border-radius: 50%;
-      background: rgb(92, 86, 86);
-      height: 300px;
+      border-radius: 50px 10px;
+      border-style: inset;
+      border-color: rgb(0, 170, 255) transparent;
       width: 300px;
+      transform: scale(1.1);
+      transition: 5s ease;
+      background-color: #FFFFFF;
     }
     .checked {
       color: rgb(213, 160, 61);
@@ -238,11 +248,22 @@ font-family: 'Berkshire Swash', cursive;
 
 .header-text h1 span{
   /* color: rgb(39, 32, 233); */
-  color: #3e7790;
+  color: #666262;
   font-size: 70px;
   margin-top: 20px;
 /* font-family: 'Lobster Two', cursive; */
 font-family: 'Amita', cursive;
+}
+
+.header-text h1 span:hover{
+  /* color: rgb(39, 32, 233); */
+  color: #2a7bb6;
+  font-size: 100px;
+  margin-top: 20px;
+/* font-family: 'Lobster Two', cursive; */
+font-family: 'Amita', cursive;
+transform: scale(1);
+transition: 5s ease-in-out;
 }
 
 /* -----------------about---------- */
@@ -262,9 +283,20 @@ font-family: 'Amita', cursive;
 }
 
 .about-col-1 img{
-  width: 100%;
-  border-radius: 50%;
+  width: 85%;
+  border-radius: 30%;
 }
+
+.about-col-1 img:hover{
+  width: 100%;
+  transform: scale(1);
+  transition: 5s ease-in-out;
+  animation-duration: infinite;
+  border-radius: 100%;
+  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(60%);
+}
+
 
 .about-col-2{
   flex-basis: 60%;
@@ -815,13 +847,18 @@ nav .fa-solid{
 } 
 @media only screen and (max-width:600px)  {
 
-  
+
   .container{
     padding: 0px 10%;
   }
 .header-text h1 span{
   font-size: 60px;
 }
+.vl{
+  display:none;
+}
+
+
   .combine{
     display: flex;
     align-items: center;
