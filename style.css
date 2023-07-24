@@ -853,6 +853,12 @@ nav .fa-solid{
 } 
 @media only screen and (max-width:600px)  {
 
+  .achieve-list div h2{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Bungee Spice';
+  }
 
   .container{
     padding: 0px 10%;
