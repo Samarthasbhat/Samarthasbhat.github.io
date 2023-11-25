@@ -1,10 +1,5 @@
-
   @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Amita:wght@400;700&family=Berkshire+Swash&family=Bodoni+Moda:wght@400;900&family=Bruno+Ace+SC&family=Kalam:wght@300;400;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@500;600;800&family=Rampart+One&family=Rubik+Vinyl&family=Satisfy&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
-
-  
-
-
 
     .vl:hover {
       margin-top: 200px;
@@ -24,7 +19,6 @@
       color:white;
     }
     
-      
       .header-vedio ,.flip-box, .logo-id{
           mix-blend-mode: exclusion;
       }
