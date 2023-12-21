@@ -74,7 +74,7 @@
                 <div class="row">
                   
                     <div class="about-col-2">
-                        <h1 class="sub-title" >About me </h1>
+                        <h1 class="sub-title about">About me</h1>
                         
                             <div class="social-icons">
         
@@ -233,7 +233,7 @@
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             
-                            <img src="logo1.png" width="200px" style="border-radius:50px" alt="">
+                            <img class="logo" src="logo1.png">
                             
                           </div>
                           <div class="flip-box-back" width="200px" style="border-radius:50px">
@@ -243,8 +243,9 @@
                       </div>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
+                <form name="submit-to-google-sheet" onsubmit="return validateForm()">
+                    <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+                    <span id="errorMessage" class="error-message"></span>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message"  rows="6" cols="50" maxlength="100" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
@@ -304,7 +305,7 @@
 
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGGd6Xa3CRrJar-BWUS4OTcjyOpK6M6_V2bqptnH5PS994sC7DYC-XuA_gU4uGsh6CEA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyGGd6Xa3CRrJar-BWUS4OTcjyOpK6M6_V2bqptnH5PS994sChttps://script.google.com/macros/s/AKfycbxy1hckgXEC6qKNLwR1bXC4cPvGsvARSNgVxHPykMQAnReq2EEo50yJZCQk0AdrS-yGKw/exec7DYC-XuA_gU4uGsh6CEA/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg  = document.getElementById("msg")
         form.addEventListener('submit', e => {
@@ -335,6 +336,28 @@
             pop.classList.remove('projectvis');
         }
       </script>
+
+      <!-- form validation -->
+
+      <script>
+        function validateForm() {
+            // Get the input value
+            const userInput = document.getElementById('Name').value.trim();
+
+            // Split the input into words using a regular expression
+
+            // Check if there are at least 3 words
+            if (userInput.length >= 3) {
+                // Reset error message
+                document.getElementById('errorMessage').textContent = '';
+                return true; // Allow form submission
+            } else {
+                // Display error message
+                document.getElementById('errorMessage').textContent = 'The name should contain atleast 3 letters';
+                return false; // Prevent form submission
+            }
+        }
+    </script>
 </body>
 
 </html>
