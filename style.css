@@ -222,8 +222,8 @@ display: inline-block;
 
 .header-text h1 span{
 /* color: rgb(39, 32, 233); */
-color: #666262;
-font-size: 70px;
+color: #FFAE03;
+font-size: 100px;
 margin-top: 20px;
 /* font-family: 'Lobster Two', cursive; */
 font-family: 'Amita', cursive;
@@ -231,7 +231,7 @@ font-family: 'Amita', cursive;
 
 .header-text h1 span:hover{
 /* color: rgb(39, 32, 233); */
-color: #2a7bb6;
+color: #FE4E00;
 font-size: 100px;
 margin-top: 20px;
 /* font-family: 'Lobster Two', cursive; */
@@ -248,20 +248,23 @@ padding: 80px 0;
 color: #ababab;
 }
 
+#about h1{
+  margin-right:400px ;
+}
 .row{
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 }
 
-.about-col-1{
-flex-basis: 35%;
-}
+
 
 .about-col-1 img{
-width: 85%;
+width: 95%;
 border-color: #010400;
-
+flex-basis: 100%;
+margin-bottom: 30px;
+margin-left:  100px;
 border-radius: 100%;
 border-width: 40px;
 border-style: solid;
@@ -276,7 +279,20 @@ to {
 }
 
 
-
+.about{
+  font-size: 40px;
+font-weight: 600;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+display: flex;
+justify-content: center;
+margin-right: 200px;
+animation-name: backgroundFont;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear; 
+}
 
 
 .sub-title{
@@ -286,7 +302,6 @@ color: #fff;
 font-family: 'Montserrat', sans-serif;
 display: flex;
 justify-content: center;
-
 animation-name: backgroundFont;
 animation-duration: 10s;
 animation-iteration-count: infinite;
@@ -570,7 +585,9 @@ color: rgb(17, 251, 9);
 }
 
 
-
+#error-message{
+  color: red;
+}
 
 .achieve-list div p{
 font-size: 13px;
@@ -581,18 +598,12 @@ font-size: 13px;
 margin: 10px;
 }
 
-.fa-docker{
 
-/* padding-left: 800px; */
-margin: 10px;
+.logo{
+  border-radius: 50px;
+  width: 200px;
+  margin-left:200px ;
 }
-
-/* .fa-github{
-margin: 10px;
-/* padding-right: 100px; */
-
-
-/* } */ */
 /* -----------portflio-------- */
 
 #projects{
@@ -870,6 +881,8 @@ display: none;
 
 @media only screen and (max-width:600px)  {
 
+
+  
 html .see-more mark a{
   font-family:'Amita';
   margin-top: 20px;
@@ -991,20 +1004,6 @@ nav ul .fa-solid{
   left: 25px;
   cursor: pointer;
 }
-
-.sub-title{
-  font-size: 40px;
-}
-
-.about-col-1{
-  flex-basis: 100%;
-}
-
-.about-col-1{
-  margin-bottom: 30px;
-}
-
-
 
 .tab-links{
   font-size: 16px;
