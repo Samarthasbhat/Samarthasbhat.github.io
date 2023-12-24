@@ -222,7 +222,7 @@ display: inline-block;
 
 .header-text h1 span{
 /* color: rgb(39, 32, 233); */
-color: #FFAE03;
+color: #F46036;
 font-size: 100px;
 margin-top: 20px;
 /* font-family: 'Lobster Two', cursive; */
@@ -231,15 +231,18 @@ font-family: 'Amita', cursive;
 
 .header-text h1 span:hover{
 /* color: rgb(39, 32, 233); */
-color: #FE4E00;
+color: #2a7bb6;
+transition: color 1s ease-in-out;
 font-size: 100px;
 margin-top: 20px;
 /* font-family: 'Lobster Two', cursive; */
 font-family: 'Amita', cursive;
-transform: scale(1);
-transition: 5s ease-in-out;
+
 }
 
+#errorMessage {
+  color: red;
+}
 
 
 /* -----------------about---------- */
@@ -248,51 +251,35 @@ padding: 80px 0;
 color: #ababab;
 }
 
-#about h1{
-  margin-right:400px ;
-}
 .row{
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 }
 
-
+.about-col-1{
+flex-basis: 35%;
+}
 
 .about-col-1 img{
-width: 95%;
-border-color: #010400;
-flex-basis: 100%;
-margin-bottom: 30px;
-margin-left:  100px;
+width: 85%;
+border-color: #ffffff;
+margin-left:100px ;
 border-radius: 100%;
-border-width: 40px;
-border-style: solid;
+border-width: 0px;
+border-style:solid;
 filter: drop-shadow(8px 8px 10px #30332E);
 animation: shadowAnimation 2s linear infinite alternate; /* Animation properties */
 }
 
 @keyframes shadowAnimation {
 to {
-  box-shadow: 1px 10px 10px 1px #439940; /* Final drop shadow */
+  box-shadow: 1px 10px 10px 1px #73BA9B; /* Final drop shadow */
 }
 }
 
 
-.about{
-  font-size: 40px;
-font-weight: 600;
-color: #fff;
-font-family: 'Montserrat', sans-serif;
-display: flex;
-justify-content: center;
-margin-right: 200px;
-animation-name: backgroundFont;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-timing-function: linear; 
-}
+
 
 
 .sub-title{
@@ -302,6 +289,7 @@ color: #fff;
 font-family: 'Montserrat', sans-serif;
 display: flex;
 justify-content: center;
+
 animation-name: backgroundFont;
 animation-duration: 10s;
 animation-iteration-count: infinite;
@@ -585,9 +573,7 @@ color: rgb(17, 251, 9);
 }
 
 
-#error-message{
-  color: red;
-}
+
 
 .achieve-list div p{
 font-size: 13px;
@@ -598,12 +584,18 @@ font-size: 13px;
 margin: 10px;
 }
 
+.fa-docker{
 
-.logo{
-  border-radius: 50px;
-  width: 200px;
-  margin-left:200px ;
+/* padding-left: 800px; */
+margin: 10px;
 }
+
+/* .fa-github{
+margin: 10px;
+/* padding-right: 100px; */
+
+
+/* } */ */
 /* -----------portflio-------- */
 
 #projects{
@@ -743,7 +735,6 @@ font-family: 'Berkshire Swash', cursive;
 /* ------contact------ */
 .contact-left{
 flex-basis: 35%;
-
 }
 
 .contact-right{
@@ -763,6 +754,7 @@ font-size: 25px;
 
 .social-icons{
 margin-top: 30px;
+margin-left: 100px;
 }
 
 .social-icons a{
@@ -881,8 +873,6 @@ display: none;
 
 @media only screen and (max-width:600px)  {
 
-
-  
 html .see-more mark a{
   font-family:'Amita';
   margin-top: 20px;
@@ -925,6 +915,11 @@ html .see-more mark a{
 .header-text h1 span{
 font-size: 60px;
 }
+
+.header-text h1 span:hover{
+  pointer-events: none;
+  display: none;
+  }
 .vl{
 display:none;
 }
@@ -934,6 +929,7 @@ display:none;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 .services-list div{
@@ -964,14 +960,6 @@ display:none;
   display: none;
 }
 
-
-
-.combine{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
 .header-text{
   margin-top: 20%;
   font-size: 16px;
@@ -1005,6 +993,20 @@ nav ul .fa-solid{
   cursor: pointer;
 }
 
+.sub-title{
+  font-size: 40px;
+}
+
+.about-col-1{
+  flex-basis: 100%;
+}
+
+.about-col-1{
+  margin-bottom: 30px;
+}
+
+
+
 .tab-links{
   font-size: 16px;
   margin-right: 20px;
@@ -1018,6 +1020,10 @@ nav ul .fa-solid{
   font-size: 14px;
 }
 
+.social-icons{
+  margin-top: 30px;
+  margin-left: 30px;
+  }
 
 
 .all{
